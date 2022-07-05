@@ -35,4 +35,4 @@ $npm start
 
 ### [Font Awesome Icons](https://fontawesome.com/icons)
 ### [React Router](https://reactrouter.com/)
-### [Axios] (https://axios-http.com/docs/intro)
+### [Axios](https://axios-http.com/)
