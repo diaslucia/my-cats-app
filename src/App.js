@@ -1,4 +1,3 @@
-import "./App.css";
 import {
   BrowserRouter,
   Routes,
@@ -11,8 +10,8 @@ import NavBar from "./components/molecules/NavBar/NavBar";
 const App = () => {
   return (
     <BrowserRouter>
+      <NavBar/>
       <Routes>
-        <NavBar/>
         <Route path="/" element={<Home />}/>
         <Route path="/profile" element={<Profile />}/>
       </Routes>
