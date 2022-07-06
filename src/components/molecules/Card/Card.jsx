@@ -52,6 +52,10 @@ const Card = ( { icons, img, id } ) => {
                     position: "relative",
                     top: "60px",
                     left: "350px",
+                    backgroundColor: "black",
+                    border: "1px solid black",
+                    padding: "8px 10px",
+                    borderRadius: "50%",
                 }}
             />
             <img className="cardCat" src={img} alt="Cat" />

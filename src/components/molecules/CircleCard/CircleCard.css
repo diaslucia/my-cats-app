@@ -1,0 +1,14 @@
+.circleCard{
+    width: 200px;
+    margin: 10px;
+}
+
+.circleCardCat{
+    border: 2px dotted #fff;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 3px;
+    border-radius: 50%;
+}

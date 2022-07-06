@@ -1,0 +1,22 @@
+.catsFavorites{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.catsFavContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.catsFavUpload{
+    width: 50%;
+}
