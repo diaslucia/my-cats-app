@@ -37,10 +37,18 @@ const CatsHome = () => {
                 }  
                 )}
             </section>
-            <Icon onClick={() => getCats()} icons={faArrowRotateRight} styles={{  color: "black",
-                                                                    fontSize: "50px",
-                                                                    marginLeft: "50px",
-                                                                    }}/>
+            <Icon
+                onClick={() => getCats()}
+                icons={faArrowRotateRight}
+                styles={{ 
+                    color: "#3D2C4E",
+                    fontSize: "50px",
+                    marginLeft: "50px",
+                    backgroundColor: "white",
+                    padding: "13px 15px",
+                    borderRadius: "50%",
+                }}
+            />
         </section>
     );
 }

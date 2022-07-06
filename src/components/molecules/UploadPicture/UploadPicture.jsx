@@ -20,7 +20,7 @@ const UploadPicture = () => {
                 </div>
                 <p id="fileName"></p>
                 <button type="button" id="buttonUpload" className="secondary-btn">
-                    Upload picture
+                    Upload
                 </button>
             </div>
         </section>

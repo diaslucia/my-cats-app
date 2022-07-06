@@ -38,20 +38,24 @@ const CatsFavorites = () => {
     }, []);
 
     return(
-        <section className="catsFavContainer">
-            {favCats && favCats.map((element) => {
-                return(
-                    <CircleCard
-                        key={element.id}
-                        icons={faTrashCan}
-                        img={element.image.url}
-                        id={element.id}
-                        action={() => removeFavoriteCat(element.id)}
-                    />
-                )
-            }  
-            )}
+        <section className="catsFav">
+            <h2 className="catsFavTitle">My Favorites</h2>
+            <div className="catsFavContainer">
+                {favCats && favCats.map((element) => {
+                    return(
+                        <CircleCard
+                            key={element.id}
+                            icons={faTrashCan}
+                            img={element.image.url}
+                            id={element.id}
+                            action={() => removeFavoriteCat(element.id)}
+                        />
+                    )
+                }  
+                )}
+            </div>
         </section>
+        
     );
 }
 

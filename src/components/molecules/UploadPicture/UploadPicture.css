@@ -1,5 +1,11 @@
 .uploadPicture{
+    background-image: url("../../../assets/wallpaperProfile2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #9881AF;
     width: 50%;
+    height: calc(100vh - 90px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -9,10 +15,12 @@
 }
 
 .uploadTitle{
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: bold;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 10px;
-    color: red;
+    color: #ffffff;
+    letter-spacing: .5px;
     margin: 0;
 }
 
@@ -26,7 +34,7 @@
 #drop {
     width: 200px;
     height: 200px;
-    background-color: rgb(115, 50, 50);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,19 +55,27 @@
 }
 
 #dropIcon {
-    width: 40px;
-    height: 40px;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 50px;
     font-weight: bold;
-    background-color: rgb(206, 118, 118);
-    color: orange;
+    background-color: #3D2C4E;
+    color: white;
     border-radius: 50%;
+    margin: 0;
+    text-align: center;
+    padding: 0px 15px;
 }
 
 #dropText {
     padding: 0 30px;
-    font-size: 1.2rem;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    color: #3D2C4E;
+    line-height: 15px;
+    opacity: 0.5;
+    margin: 0;
+    margin-top: 15px;
 }
 
 #inputFile {
@@ -75,7 +91,7 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 #fileName {
@@ -84,30 +100,32 @@
 }
 
 #buttonUpload {
-    border: 2px solid #fff;
-    color:rgb(255, 255, 255);
-    background-color: rgb(158, 117, 173);
-    width: 180px;
-    height: 60px;
+    border: 1px solid #fff;
+    color:white;
+    background-color: #9881AF;
+    width: 200px;
+    height: 50px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(76,28,92,0.79);
-    letter-spacing: 5px;
-    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
-    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
-    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #3D2C4E;
+    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20);
+    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20);
     cursor: pointer;
     transition: all 0.3s;
 }
 
 #buttonUpload:hover{
-    background-color: rgb(146, 107, 160);;
+    background-color: #81689b;
 }
 
 #buttonUpload:active{
     font-size: 17px;
-    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
-    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
-    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
+    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20) inset;
+    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20) inset;
+    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.20) inset;
 }

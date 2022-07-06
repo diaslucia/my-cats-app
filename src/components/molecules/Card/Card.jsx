@@ -47,13 +47,12 @@ const Card = ( { icons, img, id } ) => {
         <section className="card">
             <Icon icons={icons} click={handleFavorite}
                 styles= {{
-                    color: color ? "red" : "white",
+                    color: color ? "#cc2c25" : "white",
                     fontFamily: "60px",
                     position: "relative",
                     top: "60px",
                     left: "350px",
-                    backgroundColor: "black",
-                    border: "1px solid black",
+                    backgroundColor: "#3D2C4E",
                     padding: "8px 10px",
                     borderRadius: "50%",
                 }}

@@ -8,13 +8,12 @@ const CircleCard = ( { icons, img, action } ) => {
                 icons={icons}
                 click={action}
                 styles= {{
-                    color: "black",
+                    color: "#3D2C4E",
                     fontFamily: "30px",
                     position: "relative",
                     top: "60px",
                     left: "160px",
                     backgroundColor: "white",
-                    border: "1px solid black",
                     padding: "8px 10px",
                     borderRadius: "50%",
                 }}
