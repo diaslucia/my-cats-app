@@ -1,0 +1,113 @@
+.uploadPicture{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+
+.uploadTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+    margin: 0;
+}
+
+.dropContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#drop {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(115, 50, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#dropLabel {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#dropIcon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-color: rgb(206, 118, 118);
+    color: orange;
+    border-radius: 50%;
+}
+
+#dropText {
+    padding: 0 30px;
+    font-size: 1.2rem;
+}
+
+#inputFile {
+    opacity: 0;
+    height: 0;
+}
+
+#previewImage {
+    display: none;
+}
+
+.newImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+#fileName {
+    display: none;
+    font-size: 1rem;
+}
+
+#buttonUpload {
+    border: 2px solid #fff;
+    color:rgb(255, 255, 255);
+    background-color: rgb(158, 117, 173);
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(76,28,92,0.79);
+    letter-spacing: 5px;
+    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
+    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#buttonUpload:hover{
+    background-color: rgb(146, 107, 160);;
+}
+
+#buttonUpload:active{
+    font-size: 17px;
+    box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
+    -webkit-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
+    -moz-box-shadow: 13px 14px 17px -11px rgba(0,0,0,0.44) inset;
+}
