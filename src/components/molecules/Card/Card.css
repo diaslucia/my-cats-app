@@ -1,0 +1,13 @@
+.card{
+    width: 400px;
+    margin: 10px;
+}
+
+.cardCat{
+    border: 2px dotted #fff;
+    border-radius: 50px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+}

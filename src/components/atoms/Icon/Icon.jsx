@@ -1,11 +1,9 @@
 import "./Icon.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useNavigate } from 'react-router-dom';
 
-const Icon = (icons, text) => {
-    let navigate = useNavigate();
+const Icon = ( { icons, styles, click } ) => {
     return(
-        <FontAwesomeIcon className="icon" icon={icons.icons} onClick={navigate="/profile"} alt="Profile Icon"/>
+        <FontAwesomeIcon style={styles} className="icon" icon={icons} onClick={click} alt="Profile Icon"/>
     );
 }
 
