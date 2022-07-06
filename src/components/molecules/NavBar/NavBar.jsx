@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
     const navigate = useNavigate();
+    
     return(
         <nav>
             <h1 className="nav-title" onClick={() => navigate("/")}>My Cats App</h1>

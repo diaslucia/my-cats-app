@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { DataProvider } from "./context/AppContext";
 import Home from "./components/pages/Home";
 import Profile from "./components/pages/Profile";
 import NavBar from "./components/molecules/NavBar/NavBar";
@@ -10,12 +11,17 @@ import NavBar from "./components/molecules/NavBar/NavBar";
 const App = () => {
   return (
     <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/profile" element={<Profile />}/>
-      </Routes>
+    <DataProvider>
+      
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/profile" element={<Profile />}/>
+        </Routes>
+      
+    </DataProvider>
     </BrowserRouter>
+    
   );
 }
 
