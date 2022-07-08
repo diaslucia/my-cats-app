@@ -5,6 +5,7 @@ const AppContext = React.createContext({});
 export const DataProvider = ({ children }) => {
   const [cats, setCats] = useState();
   const [favCats, setFavCats] = useState();
+  const [files, setFiles] = useState([]);
 
   const axios = require('axios').default;
   const api = axios.create({
@@ -53,6 +54,30 @@ export const DataProvider = ({ children }) => {
       }
   }
 
+  const uploadCat = async (file) => {
+    let formData = new FormData();
+    formData.append('file', file);
+    console.log(file);
+    console.log(formData.get("file"));
+
+    const { data, status } = await api.post('/images/upload', {
+      file: file,
+    });
+
+    console.log("click en uploadCat")
+    console.log(status);
+    console.log(data);
+
+    if (status !== 200) {
+        console.log("Hubo un error: " + status + data.message);
+    }
+    else {
+        console.log("Foto de michi cargada");
+        addFavoriteCat(data.id);
+        getFavoriteCat();
+    }
+  }
+
   return (
     <AppContext.Provider
       value={{
@@ -63,6 +88,9 @@ export const DataProvider = ({ children }) => {
         removeFavoriteCat,
         addFavoriteCat,
         favCats,
+        files,
+        setFiles,
+        uploadCat
       }}
     >
       {children}

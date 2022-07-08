@@ -7,18 +7,12 @@ const Card = ( { icons, img, id } ) => {
     const [color, setColor] = useState(false);
 
     const {
-        removeFavoriteCat,
         addFavoriteCat,
     } = useContext(AppContext);
     
     const handleFavorite = (id) => {
-        if(color){
-            removeFavoriteCat(id);
-            setColor(false);
-        } else {
-            setColor(true);
-            addFavoriteCat(id);
-        }
+        setColor(true);
+        addFavoriteCat(id);
     }
     
     return(

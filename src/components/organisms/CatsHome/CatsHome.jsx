@@ -25,7 +25,7 @@ const CatsHome = () => {
                             key={element.id}
                             icons={faHeart}
                             img={element.url}
-                            id={element.id}
+                            id={element}
                         />
                     )
                 }  

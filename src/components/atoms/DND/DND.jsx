@@ -1,11 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import {useDropzone} from 'react-dropzone';
 import "./DND.css";
+import AppContext from "../../../context/AppContext";
 
 const DND = () => {
     const [isFile, setIsFile] = useState(false);
-    const [files, setFiles] = useState([]);
-    
+
+    const {
+        files,
+        setFiles,
+    } = useContext(AppContext);
+
     const {getRootProps, getInputProps} = useDropzone({
         maxFiles:1,
         accept: {
@@ -33,6 +38,7 @@ const DND = () => {
                         className="previewImg"
                         src={files[0].preview}
                         onLoad={() => { URL.revokeObjectURL(files[0].preview) }}
+                        alt="Cat's Preview"
                     />
                 </div>
                 :
@@ -41,7 +47,12 @@ const DND = () => {
                     <label className="dropLabel">
                         <p className="dropIcon">+</p>
                         <p className="dropText"> Drag & Drop or Click here to select an image</p>
-                        <img style={{display: isFile ? "block" : "none"}} className="previewImage" src="" alt="Image preview"/>
+                        <img
+                            style={{display: isFile ? "block" : "none"}}
+                            className="previewImage"
+                            src=""
+                            alt="Cat's Preview"
+                        />
                     </label>
                 </div>
             }
