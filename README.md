@@ -1,6 +1,10 @@
 # My Cats App 🐱
 
+In progress!
+
 ## Website Deploy 🏁
+
+Link...
 
 ## Tecnologies 🛠️
 
